@@ -13,4 +13,21 @@
     display: flex;
     font-family: "Times New Roman";
     font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carre.clicked {
+    background-color: rgb(44, 52, 44);
+    animation: clicked 1s linear;
+}
+@keyframes clicked{
+    50% {
+        transform: rotate(180deg);
+        border-radius: 120px;
+      }
+
+    100% {
+        transform: rotate(360deg);
+      }
 }
